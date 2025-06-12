@@ -21,7 +21,7 @@ const io = initializeSocket(server);
 
 // Middleware
 app.use(cors({
-  origin: "https://bic-iicquest.vercel.app",
+  origin: "*",
   credentials: true
 }));
 app.use(express.json());
